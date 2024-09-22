@@ -1,0 +1,64 @@
+# Order Management System (SOA-ESB Architecture) 
+
+## Overview
+
+This project implements an Order Management System using Service-Oriented Architecture (SOA) with an Enterprise Service Bus (ESB). It consists of multiple microservices that handle user and order management, allowing for efficient communication and data processing.
+
+## Services
+
+### 1. Order Service
+- **Port**: 3002
+- **Functionality**: Manages order creation and retrieval. It communicates with the User Service to fetch user details when creating an order.
+
+#### Endpoints
+- `POST /orders`: Create a new order.
+  - **Request Body**:
+    ```json
+    {
+      "userId": 1,
+      "products": ["item1", "item2"]
+    }
+    ```
+  - **Response**:
+    ```json
+    {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "name": "John Doe"
+      },
+      "products": ["item1", "item2"]
+    }
+    ```
+
+### 2. User Service
+- **Port**: 3001
+- **Functionality**: Manages user information and provides user details upon request.
+
+#### Endpoints
+- `GET /users/:id`: Retrieve user details by ID.
+  - **Response**:
+    ```json
+    {
+      "id": 1,
+      "name": "John Doe"
+    }
+    ```
+
+### 3. Enterprise Service Bus (ESB)
+- **Port**: 3000
+- **Functionality**: Acts as a mediator between clients and services, routing requests and managing interactions.
+
+#### Endpoints
+- `POST /orders`: Forwards the order creation request to the Order Service.
+
+## Getting Started
+
+### Prerequisites
+- Node.js installed on your machine.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/order-management-system.git
+   cd order-management-system
