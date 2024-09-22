@@ -60,5 +60,5 @@ This project implements an Order Management System using Service-Oriented Archit
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/order-management-system.git
+   git clone https://github.com/SiThuKyawTint-GuGu/Order-Management-System-SOA-ESB-Architecture-.git
    cd order-management-system
