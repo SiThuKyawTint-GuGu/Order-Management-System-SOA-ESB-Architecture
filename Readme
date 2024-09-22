@@ -25,7 +25,7 @@ This project implements an Order Management System using Service-Oriented Archit
       "id": 1,
       "user": {
         "id": 1,
-        "name": "John Doe"
+        "name": "Gu Gu"
       },
       "products": ["item1", "item2"]
     }
@@ -41,7 +41,7 @@ This project implements an Order Management System using Service-Oriented Archit
     ```json
     {
       "id": 1,
-      "name": "John Doe"
+      "name": "Gu Gu"
     }
     ```
 
@@ -60,5 +60,5 @@ This project implements an Order Management System using Service-Oriented Archit
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SiThuKyawTint-GuGu/Order-Management-System-SOA-ESB-Architecture-.git
+   git clone https://github.com/SiThuKyawTint-GuGu/Order-Management-System-SOA-ESB-Architecture.git
    cd order-management-system

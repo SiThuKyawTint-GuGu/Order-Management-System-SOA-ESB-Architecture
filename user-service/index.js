@@ -3,8 +3,8 @@ const app = express();
 app.use(express.json());
 
 let users = [
-    { id: 1, name: 'John Doe' },
-    { id: 2, name: 'Jane Doe' }
+    { id: 1, name: 'Gu Gu' },
+    { id: 2, name: 'Si Thu' }
 ];
 
 app.post('/users', (req, res) => {
